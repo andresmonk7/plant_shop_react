@@ -7,7 +7,7 @@ const categories = [
     name: 'Plantas de Interior',
     slug: 'interior',
     description: 'Encuentra la planta perfecta para darle vida a tus espacios interiores',
-    image: 'https://images.unsplash.com/photo-1512428813834-c702c770272b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: 'https://cdn.pixabay.com/photo/2016/11/29/05/01/lights-1867437_640.jpg',
     count: 24
   },
   {
@@ -15,7 +15,7 @@ const categories = [
     name: 'Suculentas',
     slug: 'suculentas',
     description: 'Perfectas para principiantes, requieren pocos cuidados',
-    image: 'https://images.unsplash.com/photo-1516727137709-7c3bfcc20b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: 'https://cdn.pixabay.com/photo/2023/11/06/14/00/ai-generated-8369699_640.png',
     count: 18
   },
   {
@@ -31,7 +31,7 @@ const categories = [
     name: 'Plantas de Sombra',
     slug: 'sombra',
     description: 'Perfectas para espacios con poca luz natural',
-    image: 'https://images.unsplash.com/photo-1593480778366-0d624f3d3ea7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: 'https://cdn.pixabay.com/photo/2015/04/10/17/03/pots-716579_1280.jpg',
     count: 15
   },
   {
@@ -39,7 +39,7 @@ const categories = [
     name: 'Plantas Aromáticas',
     slug: 'aromaticas',
     description: 'Aromas naturales para tu hogar y cocina',
-    image: 'https://images.unsplash.com/photo-1601571621973-ee8c155653f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: 'https://cdn.pixabay.com/photo/2016/11/21/12/41/cacti-1845159_640.jpg',
     count: 12
   },
   {
@@ -47,7 +47,7 @@ const categories = [
     name: 'Plantas Grandes',
     slug: 'grandes',
     description: 'Para dar un toque de elegancia a espacios amplios',
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1913&q=80',
+    image: 'https://cdn.pixabay.com/photo/2017/08/07/19/04/house-2606818_640.jpg',
     count: 8
   }
 ];

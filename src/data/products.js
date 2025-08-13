@@ -4,7 +4,7 @@ const products = [
     name: 'Monstera Deliciosa',
     price: 45.99,
     category: 'Populares',
-    image: 'https://images.unsplash.com/photo-1603211875603-1ed62288444d?w=200',
+    image: 'https://cdn.pixabay.com/photo/2021/09/22/12/02/monstera-6646644_640.jpg',
     description: 'Una hermosa planta de interior con hojas grandes y exóticas.'
   },
   {
@@ -12,7 +12,7 @@ const products = [
     name: 'Sansevieria',
     price: 32.50,
     category: 'Suculentas',
-    image: 'https://images.unsplash.com/photo-1593482892290-a5d477a40e7c?w=200',
+    image: 'https://cdn.pixabay.com/photo/2014/10/09/14/55/flowers-481984_640.jpg',
     description: 'Conocida como "lengua de suegra", es muy resistente y purifica el aire.'
   },
   {
@@ -20,7 +20,7 @@ const products = [
     name: 'Poto',
     price: 28.75,
     category: 'Colgantes',
-    image: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=200',
+    image: 'https://cdn.pixabay.com/photo/2020/06/29/17/39/plant-5353608_1280.jpg',
     description: 'Planta colgante de fácil cuidado, perfecta para interiores.'
   },
   {
@@ -28,7 +28,7 @@ const products = [
     name: 'Cactus',
     price: 15.99,
     category: 'Suculentas',
-    image: 'https://images.unsplash.com/photo-1485955903706-d98b60f79b8d?w=200',
+    image: 'https://cdn.pixabay.com/photo/2019/04/27/21/56/cactus-4161380_640.jpg',
     description: 'Perfecto para quienes buscan plantas de bajo mantenimiento.'
   },
   {
