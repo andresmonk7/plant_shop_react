@@ -7,7 +7,13 @@ const ProductCard = ({ product }) => {
   const isInCart = cartItems.some(item => item.id === product.id);
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product));
+    console.log('Agregando al carrito:', product);
+    dispatch(addToCart({
+      ...product,
+      // Asegurarse de que el precio sea un número
+      price: Number(product.price)
+    }));
+    console.log('Producto agregado al carrito');
   };
 
   return (

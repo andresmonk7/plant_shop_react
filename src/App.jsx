@@ -12,81 +12,8 @@ import Checkout from './pages/Checkout';
 import Account from './pages/Account';
 import './App.css';
 
-// Componente Header inspirado en Adidas
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-black text-adidas-black">PLANT.</span>
-          </Link>
-
-          {/* Menú de navegación */}
-          <nav className="hidden md:flex items-center space-x-1">
-            <Link to="/" className="nav-link flex items-center gap-1.5 px-4 py-2 rounded-lg hover:bg-gray-100">
-              <FiHome className="w-4 h-4" />
-              <span>Inicio</span>
-            </Link>
-            <Link to="/productos" className="nav-link flex items-center gap-1.5 px-4 py-2 rounded-lg hover:bg-gray-100">
-              <FiGrid className="w-4 h-4" />
-              <span>Productos</span>
-            </Link>
-            <Link to="/categorias" className="nav-link flex items-center gap-1.5 px-4 py-2 rounded-lg hover:bg-gray-100">
-              <FiGrid className="w-4 h-4" />
-              <span>Categorías</span>
-            </Link>
-            <Link to="/nosotros" className="nav-link flex items-center gap-1.5 px-4 py-2 rounded-lg hover:bg-gray-100">
-              <FiInfo className="w-4 h-4" />
-              <span>Nosotros</span>
-            </Link>
-          </nav>
-
-          {/* Iconos de usuario y carrito */}
-          <div className="flex items-center space-x-4">
-            <Link to="/cuenta" className="p-2 hover:text-adidas-green transition-colors">
-              <FiUser className="w-5 h-5" />
-            </Link>
-            <Link to="/carrito" className="p-2 hover:text-adidas-green transition-colors relative">
-              <FiShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 bg-adidas-green text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
-            </Link>
-            <button 
-              className="md:hidden p-2 text-adidas-black"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-
-        {/* Menú móvil */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white py-4 border-t border-gray-100">
-            <nav className="flex flex-col space-y-3">
-              <Link to="/" className="px-4 py-2 font-medium hover:text-adidas-green" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
-              <Link to="/productos" className="px-4 py-2 font-medium hover:text-adidas-green" onClick={() => setIsMenuOpen(false)}>Productos</Link>
-              <Link to="/categorias" className="px-4 py-2 font-medium hover:text-adidas-green" onClick={() => setIsMenuOpen(false)}>Categorías</Link>
-              <Link to="/nosotros" className="px-4 py-2 font-medium hover:text-adidas-green" onClick={() => setIsMenuOpen(false)}>Nosotros</Link>
-            </nav>
-          </div>
-        )}
-      </div>
-    </header>
-  );
-};
+// Importar el Header desde components
+import Header from './components/Header';
 
 // Componente Footer inspirado en Adidas
 const Footer = () => {
